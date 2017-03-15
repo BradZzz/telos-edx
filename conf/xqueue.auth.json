@@ -1,0 +1,23 @@
+{
+    "AWS_ACCESS_KEY_ID": "",
+    "AWS_SECRET_ACCESS_KEY": "",
+    "DATABASES": {
+        "default": {
+            "ENGINE": "django.db.backends.mysql",
+            "HOST": "localhost",
+            "NAME": "bitnami_edx_xqueue",
+            "PASSWORD": "83cf65ffe9af",
+            "PORT": "3306",
+            "USER": "bn_edx"
+        }
+    },
+    "RABBITMQ_PASS": "83cf65ffe9af",
+    "RABBITMQ_USER": "bn_edx",
+    "REQUESTS_BASIC_AUTH": [
+        "edx",
+        "edx"
+    ],
+    "USERS": {
+        "lms": "83cf65ffe9af"
+    }
+}
