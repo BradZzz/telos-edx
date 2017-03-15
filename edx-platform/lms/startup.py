@@ -17,8 +17,8 @@ from monkey_patch import (
     django_db_models_options
 )
 
-import xmodule.x_module
-import lms_xblock.runtime
+# import xmodule.x_module
+# import lms_xblock.runtime
 
 from openedx.core.djangoapps.theming.core import enable_comprehensive_theme
 from microsite_configuration import microsite
@@ -80,8 +80,8 @@ def run():
     # monkey-patch the x_module library.
     # TODO: Remove this code when Runtimes are no longer created by modulestores
     # https://openedx.atlassian.net/wiki/display/PLAT/Convert+from+Storage-centric+runtimes+to+Application-centric+runtimes
-    xmodule.x_module.descriptor_global_handler_url = lms_xblock.runtime.handler_url
-    xmodule.x_module.descriptor_global_local_resource_url = lms_xblock.runtime.local_resource_url
+    # xmodule.x_module.descriptor_global_handler_url = lms_xblock.runtime.handler_url
+    # xmodule.x_module.descriptor_global_local_resource_url = lms_xblock.runtime.local_resource_url
 
 
 def add_mimetypes():
