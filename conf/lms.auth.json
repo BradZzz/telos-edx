@@ -25,35 +25,31 @@
     "CONTENTSTORE": {
         "ADDITIONAL_OPTIONS": {}, 
         "DOC_STORE_CONFIG": {
-            "collection": "modulestore", 
-            "db": "bitnami_edx", 
-            "host": [
-                "localhost"
-            ], 
-            "password": "83cf65ffe9af", 
-            "port": 27017, 
-            "user": "bn_edx"
+            "collection": "modulestore",
+            "db": "telosdb",
+            "host": "54.226.0.20",
+            "password": "hS0doZ8I",
+            "port": 27017,
+            "user": "root"
         }, 
         "ENGINE": "xmodule.contentstore.mongo.MongoContentStore", 
         "OPTIONS": {
-            "db": "bitnami_edx", 
-            "host": [
-                "localhost"
-            ], 
-            "password": "83cf65ffe9af", 
-            "port": 27017, 
-            "user": "bn_edx"
+            "db": "telosdb",
+            "host": "54.226.0.20",
+            "password": "hS0doZ8I",
+            "port": 27017,
+            "user": "root"
         }
     }, 
     "DATABASES": {
         "default": {
-            "ENGINE": "django.db.backends.mysql", 
-            "HOST": "localhost", 
-            "NAME": "bitnami_edx", 
-            "PASSWORD": "83cf65ffe9af", 
-            "PORT": "3306", 
-            "USER": "bn_edx"
-        }, 
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": "telos-master",
+            "HOST": "telos-master.cybsveonwzdx.us-east-1.rds.amazonaws.com",
+            "USER": "admin",
+            "PASSWORD": "t3los!?!auth**db",
+            "PORT": "3306",
+        },
         "read_replica": {
             "ENGINE": "django.db.backends.mysql", 
             "HOST": "localhost", 
@@ -64,14 +60,12 @@
         }
     }, 
     "DOC_STORE_CONFIG": {
-        "collection": "modulestore", 
-        "db": "bitnami_edx", 
-        "host": [
-            "localhost"
-        ], 
-        "password": "83cf65ffe9af", 
-        "port": 27017, 
-        "user": "bn_edx"
+        "collection": "modulestore",
+        "db": "telosdb",
+        "host": "54.226.0.20",
+        "password": "hS0doZ8I",
+        "port": 27017,
+        "user": "root"
     }, 
     "EDX_API_KEY": "3d277fa1cfd614b28182",
     "EMAIL_HOST": "", 
@@ -90,13 +84,11 @@
                     {
                         "DOC_STORE_CONFIG": {
                             "collection": "modulestore", 
-                            "db": "bitnami_edx", 
-                            "host": [
-                                "localhost"
-                            ], 
-                            "password": "83cf65ffe9af", 
+                            "db": "telosdb",
+                            "host": "54.226.0.20",
+                            "password": "hS0doZ8I",
                             "port": 27017, 
-                            "user": "bn_edx"
+                            "user": "root"
                         }, 
                         "ENGINE": "xmodule.modulestore.mongo.DraftMongoModuleStore", 
                         "NAME": "draft", 
@@ -116,15 +108,13 @@
                     }, 
                     {
                         "DOC_STORE_CONFIG": {
-                            "collection": "modulestore", 
-                            "db": "bitnami_edx", 
-                            "host": [
-                                "localhost"
-                            ], 
-                            "password": "83cf65ffe9af", 
-                            "port": 27017, 
-                            "user": "bn_edx"
-                        }, 
+                            "collection": "modulestore",
+                            "db": "telosdb",
+                            "host": "54.226.0.20",
+                            "password": "hS0doZ8I",
+                            "port": 27017,
+                            "user": "root"
+                        },
                         "ENGINE": "xmodule.modulestore.split_mongo.split_draft.DraftVersioningModuleStore", 
                         "NAME": "split", 
                         "OPTIONS": {
