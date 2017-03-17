@@ -1,5 +1,5 @@
-2017-03-14 20:08:59,415 INFO 3734 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
-2017-03-14 20:08:59,469 WARNING 3734 [py.warnings] base.py:260 - /opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/django/core/management/base.py:260: RemovedInDjango19Warning: "requires_model_validation" is deprecated in favor of "requires_system_checks".
+2017-03-17 16:37:22,271 INFO 12122 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-03-17 16:37:22,371 WARNING 12122 [py.warnings] base.py:260 - /opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/django/core/management/base.py:260: RemovedInDjango19Warning: "requires_model_validation" is deprecated in favor of "requires_system_checks".
   RemovedInDjango19Warning)
 
 System check identified some issues:
@@ -7,7 +7,7 @@ System check identified some issues:
 WARNINGS:
 wiki.ArticleRevision.ip_address: (fields.W900) IPAddressField has been deprecated. Support for it (except in historical migrations) will be removed in Django 1.9.
 	HINT: Use GenericIPAddressField instead.
-2017-03-14 20:09:02,884 WARNING 3734 [py.warnings] worker.py:161 - /opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+2017-03-17 16:37:25,654 WARNING 12122 [py.warnings] worker.py:161 - /opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
 Starting from version 3.2 Celery will refuse to accept pickle by default.
 
 The pickle serializer is a security concern as it may give attackers
@@ -27,7 +27,7 @@ You must only enable the serializers that you will actually use.
 
   warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
 
-2017-03-14 20:09:03,098 INFO 3734 [celery.worker.consumer] consumer.py:479 - Connected to amqp://bn_edx:**@127.0.0.1:5672//
-2017-03-14 20:09:03,209 INFO 3734 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
-2017-03-14 20:09:04,248 INFO 3734 [celery.worker.consumer] consumer.py:585 - mingle: all alone
-2017-03-14 20:09:04,392 WARNING 3734 [celery.redirected] log.py:282 - celery@edx.cms.core.low.ip-172-31-65-39 ready.
+2017-03-17 16:37:25,693 INFO 12122 [celery.worker.consumer] consumer.py:479 - Connected to amqp://bn_edx:**@127.0.0.1:5672//
+2017-03-17 16:37:25,714 INFO 12122 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-03-17 16:37:26,724 INFO 12122 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-03-17 16:37:26,754 WARNING 12122 [celery.redirected] log.py:282 - celery@edx.cms.core.low.ip-172-31-65-46 ready.
