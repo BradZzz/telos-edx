@@ -180,7 +180,7 @@
 
       a {
         @include float(right);
-        display: inline-block;
+        display: none;
 
         &:hover {
           border-bottom: none;
