@@ -230,7 +230,10 @@ html {
     }
 }
 
-.global-navigation {
+header.global {
+  .primary>a {
+    background-color: transparent;
+  }
   .user {
     height: 2.53em;
     background: white;
@@ -243,10 +246,6 @@ html {
       }
     }
   }
-}
-
-header.global .primary>a {
-  background-color: transparent;
 }
 
 //-----------------
