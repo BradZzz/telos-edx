@@ -244,10 +244,17 @@ header.global {
       right: 0;
     }
     .dropdown {
-      padding-top: 10px !important;
       background: transparent !important;
     }
   }
+}
+
+.view-dashboard header.global .dropdown {
+  padding-top: 5px !important;
+}
+
+not(.view-dashboard) header.global .dropdown {
+  padding-top: 10px !important;
 }
 
 //-----------------

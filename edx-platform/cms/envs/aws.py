@@ -219,8 +219,8 @@ LOGGING = get_logger_config(LOG_DIR,
                             service_variant=SERVICE_VARIANT)
 
 #theming start:
-PLATFORM_NAME = ENV_TOKENS.get('PLATFORM_NAME', 'edX')
-STUDIO_NAME = ENV_TOKENS.get('STUDIO_NAME', 'edX Studio')
+PLATFORM_NAME = ENV_TOKENS.get('PLATFORM_NAME', 'Telos')
+STUDIO_NAME = ENV_TOKENS.get('STUDIO_NAME', 'Telos Studio')
 STUDIO_SHORT_NAME = ENV_TOKENS.get('STUDIO_SHORT_NAME', 'Studio')
 
 # Event Tracking
