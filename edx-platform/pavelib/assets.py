@@ -421,6 +421,9 @@ def update_assets(args):
     """
     Compile CoffeeScript and Sass, then collect static assets.
     """
+
+    print "Updating Assets: 1"
+
     parser = argparse.ArgumentParser(prog='paver update_assets')
     parser.add_argument(
         'system', type=str, nargs='*', default=ALL_SYSTEMS,
@@ -442,16 +445,28 @@ def update_assets(args):
         '--watch', action='store_true', default=False,
         help="Watch files for changes",
     )
+
+    print "Updating Assets: 2"
+
     args = parser.parse_args(args)
 
     compile_templated_sass(args.system, args.settings)
     process_xmodule_assets()
     process_npm_assets()
     compile_coffeescript()
+    print "Updating Assets: 3"
+    print args.system
+    print args.settings
+    print "Updating Assets: 4"
+
     call_task('pavelib.assets.compile_sass', options={'system': args.system, 'debug': args.debug})
+
+    print "Updating Assets: 5"
 
     if args.collect:
         collect_assets(args.system, args.settings)
 
     if args.watch:
         call_task('pavelib.assets.watch_assets', options={'background': not args.debug})
+
+    print "Updating Assets: 6"

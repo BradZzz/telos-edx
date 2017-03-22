@@ -24,23 +24,16 @@ def run():
     """
     Executed during django startup
     """
-    print "1!"
     third_party_auth.patch()
-    print "2!"
     django_db_models_options.patch()
 
     # Comprehensive theming needs to be set up before django startup,
     # because modifying django template paths after startup has no effect.
-    print "3!"
     if settings.COMPREHENSIVE_THEME_DIR:
         enable_comprehensive_theme(settings.COMPREHENSIVE_THEME_DIR)
-    print "4!"
     django.setup()
-    print "5!"
     autostartup()
-    print "6!"
     add_mimetypes()
-    print "7!"
     if settings.FEATURES.get('USE_CUSTOM_THEME', False):
         enable_theme()
 
@@ -48,7 +41,6 @@ def run():
     # monkey-patch the x_module library.
     # TODO: Remove this code when Runtimes are no longer created by modulestores
     # https://openedx.atlassian.net/wiki/display/PLAT/Convert+from+Storage-centric+runtimes+to+Application-centric+runtimes
-    print "8!"
     xmodule.x_module.descriptor_global_handler_url = cms.lib.xblock.runtime.handler_url
     xmodule.x_module.descriptor_global_local_resource_url = cms.lib.xblock.runtime.local_resource_url
 
