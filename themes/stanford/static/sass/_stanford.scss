@@ -220,9 +220,13 @@ html {
 //-----------------
 .home>header {
     height: 500px;
-
+    background-position: 10em -15em;
+    background-size: 120%;
     .outer-wrapper {
         padding: 120px 0 !important;
+        .title {
+          margin-left: 10%;
+        }
     }
 }
 
