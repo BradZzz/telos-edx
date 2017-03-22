@@ -230,6 +230,25 @@ html {
     }
 }
 
+.global-navigation {
+  .user {
+    height: 2.53em;
+    background: white;
+    border-radius: 5px;
+    p:nth-child(2) {
+      position: absolute;
+      right: 0;
+      .dropdown {
+        padding-top: .3em;
+      }
+    }
+  }
+}
+
+header.global .primary>a {
+  background-color: transparent;
+}
+
 //-----------------
 // Footer Styling
 //-----------------
