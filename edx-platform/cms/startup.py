@@ -38,8 +38,8 @@ def run():
 
     add_mimetypes()
 
-    if settings.FEATURES.get('USE_CUSTOM_THEME', False):
-        enable_theme()
+    # if settings.FEATURES.get('USE_CUSTOM_THEME', False):
+    #     enable_theme()
 
     # In order to allow descriptors to use a handler url, we need to
     # monkey-patch the x_module library.
