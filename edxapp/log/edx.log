@@ -20437,3 +20437,1184 @@ VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/pyt
 2017-03-21 09:05:21,472 WARNING 955 [py.warnings] importlib.py:9 - /opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/require/helpers.py:4: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
   from django.utils.importlib import import_module
 
+2017-03-22 05:52:48,865 INFO 23434 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-03-22 05:54:25,107 INFO 23576 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-03-22 05:55:24,051 INFO 23646 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-03-22 05:55:24,074 WARNING 23646 [py.warnings] importlib.py:9 - /opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/require/helpers.py:4: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+2017-03-22 05:56:22,213 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'equality_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,214 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'vertical_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,215 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'attempts_scoreboard_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,215 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'filethumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,216 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'slider_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,216 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'helloworld_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,217 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'html_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,217 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'textinput_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,218 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'allscopes_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,218 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'debugchild'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,219 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'problem_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,219 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sidebar_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,220 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'view_counter_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,220 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sequence_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,221 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'thumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,636 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'equality_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,637 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'vertical_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,637 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'attempts_scoreboard_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,638 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'filethumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,638 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'slider_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,639 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'helloworld_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,639 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'html_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,640 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'textinput_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,640 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'allscopes_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,641 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'debugchild'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,641 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'problem_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,642 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sidebar_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,642 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'view_counter_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,643 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sequence_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,643 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'thumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,688 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'equality_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,688 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'vertical_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,689 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'attempts_scoreboard_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,689 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'filethumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,690 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'slider_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,690 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'helloworld_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,691 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'html_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,691 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'textinput_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,692 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'allscopes_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,692 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'debugchild'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,693 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'problem_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,693 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sidebar_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,694 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'view_counter_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,694 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sequence_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,695 WARNING 23982 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'thumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:22,976 INFO 23982 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-03-22 05:56:52,864 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'equality_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,865 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'vertical_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,865 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'attempts_scoreboard_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,866 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'filethumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,866 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'slider_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,867 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'helloworld_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,867 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'html_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,868 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'textinput_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,868 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'allscopes_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,869 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'debugchild'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,869 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'problem_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,870 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sidebar_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,870 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'view_counter_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,871 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sequence_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:52,871 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'thumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,275 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'equality_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,275 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'vertical_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,277 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'attempts_scoreboard_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,277 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'filethumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,278 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'slider_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,278 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'helloworld_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,279 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'html_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,279 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'textinput_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,280 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'allscopes_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,280 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'debugchild'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,281 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'problem_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,281 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sidebar_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,282 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'view_counter_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,282 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sequence_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,282 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'thumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,325 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'equality_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,325 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'vertical_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,326 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'attempts_scoreboard_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,326 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'filethumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,327 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'slider_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,327 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'helloworld_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,328 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'html_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,328 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'textinput_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,329 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'allscopes_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,329 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'debugchild'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,330 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'problem_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,330 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sidebar_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,331 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'view_counter_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,331 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'sequence_demo'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,332 WARNING 24058 [xblock.plugin] plugin.py:147 - Unable to load XBlock 'thumbs'
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 144, in load_classes
+    yield (class_.name, cls._load_class_entry_point(class_))
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/xblock/plugin.py", line 73, in _load_class_entry_point
+    class_ = entry_point.load()
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2354, in load
+    self.require(*args, **kwargs)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 2371, in require
+    items = working_set.resolve(reqs, env, installer)
+  File "/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/pkg_resources/__init__.py", line 844, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+VersionConflict: (Django 1.8.12 (/opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages), Requirement.parse('Django<1.5,>=1.4'))
+2017-03-22 05:56:53,613 INFO 24058 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-03-22 05:56:53,632 WARNING 24058 [py.warnings] importlib.py:9 - /opt/bitnami/apps/edx/edx-platform/venv/lib/python2.7/site-packages/require/helpers.py:4: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
