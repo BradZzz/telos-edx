@@ -231,8 +231,9 @@ html {
 }
 
 header.global {
-  .primary>a {
+  .user-link {
     background-color: transparent;
+    box-shadow: none;
   }
   .user {
     height: 2.53em;
@@ -241,9 +242,10 @@ header.global {
     p:nth-child(2) {
       position: absolute;
       right: 0;
-      .dropdown {
-        padding-top: .3em;
-      }
+    }
+    .dropdown {
+      padding-top: .4em;
+      background: transparent;
     }
   }
 }
