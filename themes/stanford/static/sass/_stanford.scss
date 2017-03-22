@@ -249,11 +249,11 @@ header.global {
   }
 }
 
-.view-dashboard header.global .dropdown {
+body.view-dashboard header.global .dropdown {
   padding-top: 5px !important;
 }
 
-not(.view-dashboard) header.global .dropdown {
+body:not(.view-dashboard) header.global .dropdown {
   padding-top: 10px !important;
 }
 
