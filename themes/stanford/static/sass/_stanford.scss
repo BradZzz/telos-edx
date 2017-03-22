@@ -185,12 +185,12 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/stanford/static/images/sunrise.jpg');
+$homepage-bg-image: none;
 
 $login-banner-image: none;
 $register-banner-image: none;
 
-$video-thumb-url: '../themes/stanford/static/images/edx.png';
+$video-thumb-url: none;
 
 //-----------------
 //  Mixin Styles

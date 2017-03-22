@@ -8,6 +8,7 @@ from openedx.core.djangoapps.theming.storage import ComprehensiveThemingAwareMix
 
 
 class ProductionStorage(
+        ComprehensiveThemingAwareMixin,
         OptimizedFilesMixin,
         PipelineMixin,
         CachedFilesMixin,
@@ -21,6 +22,7 @@ class ProductionStorage(
 
 
 class DevelopmentStorage(
+        ComprehensiveThemingAwareMixin,
         NonPackagingMixin,
         PipelineMixin,
         StaticFilesStorage
