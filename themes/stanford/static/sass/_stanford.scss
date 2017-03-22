@@ -232,8 +232,8 @@ html {
 
 header.global {
   .user-link {
-    background-color: transparent;
-    box-shadow: none;
+    background-color: transparent !important;
+    box-shadow: none !important;
   }
   .user {
     height: 2.53em;
@@ -244,8 +244,8 @@ header.global {
       right: 0;
     }
     .dropdown {
-      padding-top: .4em;
-      background: transparent;
+      padding-top: .4em !important;
+      background: transparent !important;
     }
   }
 }
