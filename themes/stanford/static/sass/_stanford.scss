@@ -213,6 +213,9 @@ html {
 .window-wrap > .content-wrapper {
   outline-style: none;
 }
+.content-wrapper {
+  min-height: 90vh !important;
+}
 
 //-----------------
 // Header Styling
@@ -251,17 +254,22 @@ header.global {
   .cta-login {
     background: #23B4E8 !important;
   }
-  .user-link {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    color: #eeeeee;
-    text-shadow: none !important;
-  }
   .user {
     height: 2.53em;
     background: tranparent;
     border-radius: 5px;
-    margin-right: 1em;
+    margin-right: 2em !important;
+    .user-link {
+      background-color: transparent !important;
+      box-shadow: none !important;
+      color: #eeeeee !important;
+      text-shadow: none !important;
+      .user-image-frame {
+        border-radius: 0% !important;
+        border: 1px solid #eeeeee;
+        margin-right: .5em;
+      }
+    }
     .primary .fa-sort-desc {
       color: #eeeeee;
     }
