@@ -254,11 +254,17 @@ header.global {
   .user-link {
     background-color: transparent !important;
     box-shadow: none !important;
+    color: #eeeeee;
+    text-shadow: none !important;
   }
   .user {
     height: 2.53em;
-    background: white;
+    background: tranparent;
     border-radius: 5px;
+    margin-right: 1em;
+    .primary .fa-sort-desc {
+      color: #eeeeee;
+    }
     p:nth-child(2) {
       position: absolute;
       right: 0;
@@ -309,10 +315,11 @@ body:not(.view-dashboard) header.global .dropdown {
         }
 
         a {
-          color: white !important;
+          color: #eeeeee !important;
           text-decoration: none !important;
           &:hover {
-            color: lighten(white, 30%) !important;
+            color: lighten(#eeeeee, 30%) !important;
+            cursor: pointer;
           }
         }
     }
