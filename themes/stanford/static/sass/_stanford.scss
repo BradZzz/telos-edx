@@ -218,17 +218,34 @@ html {
   .title {
     margin: 0;
     background-color: transparent !important;
+    text-align: center;
   }
   .title>.heading-group h1 {
     color: #eeeeee;
-    text-shadow: none !important;
+    box-shadow: none !important;
+    font-weight: bold;
   }
-  height: 500px;
+  .outer-wrapper {
+    margin: 12em auto 0 auto !important;
+  }
+  height: 90vh;
   background-position: 10em -15em;
   background-size: 120% !important;
 }
 
 header.global {
+  border-bottom: 0px !important;
+  box-shadow: none !important;
+  background: $main-color;
+  .nav-global {
+    float: right !important;
+    li a {
+      color: white !important;
+    }
+  }
+  .cta-login {
+    background: #23B4E8 !important;
+  }
   .user-link {
     background-color: transparent !important;
     box-shadow: none !important;
