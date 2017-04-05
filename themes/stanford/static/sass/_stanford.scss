@@ -338,7 +338,7 @@ section.container {
   a {
     width: 100%;
     text-align: start;
-    border-bottom: none;
+    border-bottom: none !important;
     &.active {
       color: $dark-color !important;
     }
