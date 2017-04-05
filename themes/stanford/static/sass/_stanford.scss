@@ -217,21 +217,15 @@ html {
 .home>header {
   .title {
     margin: 0;
-    background-color: transparent;
+    background-color: transparent !important;
   }
   .title>.heading-group h1 {
     color: #eeeeee;
-    text-shadow: none;
+    text-shadow: none !important;
   }
   height: 500px;
   background-position: 10em -15em;
   background-size: 120% !important;
-  .outer-wrapper {
-    padding: 120px 0 !important;
-    .title {
-      margin-left: 10%;
-    }
-  }
 }
 
 header.global {
