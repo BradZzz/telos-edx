@@ -208,7 +208,10 @@ $register-banner-image: none;
 // Override CSS
 //-----------------
 html {
-    background-color: $secondary-25 !important;
+  background-color: $secondary-25 !important;
+}
+.window-wrap > .content-wrapper {
+  outline-style: none;
 }
 
 //-----------------
@@ -229,7 +232,7 @@ html {
   .outer-wrapper {
     margin: 12em auto 0 auto !important;
   }
-  height: 90vh;
+  height: 91vh;
   background-position: 10em -15em;
   background-size: cover !important;
 }
