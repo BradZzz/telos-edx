@@ -223,7 +223,7 @@ html {
   }
   .title>.heading-group h1 {
     color: #eeeeee;
-    box-shadow: none !important;
+    text-shadow: none !important;
     font-weight: bold;
   }
   .outer-wrapper {
@@ -231,7 +231,7 @@ html {
   }
   height: 90vh;
   background-position: 10em -15em;
-  background-size: 120% !important;
+  background-size: cover !important;
 }
 
 header.global {
@@ -317,4 +317,21 @@ section.tos {
     .print {
         margin: 50px 0;
     }
+}
+section.container {
+  .about-menu, .content-menu {
+    width: 45%;
+    padding: 1.5em;
+    float: left;
+    .container.about .message {
+      border-bottom: none;
+    }
+    nav::after {
+      background-image: none !important;
+    }
+  }
+  a {
+    width: 100%;
+    text-align: start;
+  }
 }
