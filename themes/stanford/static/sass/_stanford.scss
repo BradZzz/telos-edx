@@ -282,10 +282,12 @@ body:not(.view-dashboard) header.global .dropdown {
 //-----------------
 .wrapper-footer {
     box-shadow: none !important;
+    background: #607D8A !important;
     
     footer {
         max-width: 1180px;
         margin: 0 auto;
+        min-height: 30px;
 
         .colophon {
             width: 80%;
@@ -302,6 +304,10 @@ body:not(.view-dashboard) header.global .dropdown {
         .references {
             width: 15%;
             float: right;
+        }
+
+        a {
+          color: white !important;
         }
     }
 

@@ -14,25 +14,15 @@
       <nav class="nav-colophon">
         <ol>
           <li><a href="${reverse('about')}">About</a></li>
-          <li><a href="${reverse('about')}#careers">Careers</a></li>
-          <li><a href="${reverse('about')}#contact">Contact</a></li>
-          <li><a href="${reverse('tos')}">Terms of Service</a></li>
-          <li><a href="${reverse('tos')}#privacy">Privacy Policy</a></li>
-          <li><a href="${reverse('tos')}#honor">Honor Code</a></li>
-          <li><a href="${reverse('tos')}#copyright">Copyright</a></li>
+          <li><a href="${reverse('about')}#tos">Terms of Service</a></li>
+          <li><a href="${reverse('about')}#privpol">Privacy Policy</a></li>
+          <li><a href="${reverse('about')}#honcode">Honor Code</a></li>
+          <li><a href="${reverse('about')}#copyright">Copyright</a></li>
         </ol>
       </nav>
     </div>
     <div class="references">
-      <span>Built on <a href="http://code.edx.org">OpenEdX</a>.</span>
-    </div>
-
-    <div class="copyright">
-        <p><span>
-            ${_('Copyright Telos {year}. All rights reserved.').format(
-                year=date.today().year
-            )}
-        </span></p>
+      <span>${'Copyright Telos {year}.'.format(year=date.today().year)}. Built on <a href="http://code.edx.org">OpenEdX</a>.</span>
     </div>
   </footer>
 </div>
