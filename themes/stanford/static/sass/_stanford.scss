@@ -310,6 +310,10 @@ body:not(.view-dashboard) header.global .dropdown {
 
         a {
           color: white !important;
+          text-decoration: none !important;
+          &:hover {
+            color: lighten(white, 30%) !important;
+          }
         }
     }
 
@@ -346,7 +350,7 @@ section.container {
   .content-menu {
     width: 65% !important;
   }
-  a {
+  .about-menu a, .content-menu a {
     width: 100%;
     text-align: start;
     border-bottom: none !important;
