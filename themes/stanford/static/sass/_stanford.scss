@@ -287,11 +287,12 @@ body:not(.view-dashboard) header.global .dropdown {
     footer {
         max-width: 1180px;
         margin: 0 auto;
-        min-height: 30px;
+        min-height: 45px;
 
         .colophon {
             width: 80%;
             float: left;
+            padding-top: 1em;
 
             .nav-colophon li {
                 display: inline-block;
