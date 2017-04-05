@@ -219,6 +219,7 @@ html {
     margin: 0;
     background-color: transparent !important;
     text-align: center;
+    box-shadow: none !important;
   }
   .title>.heading-group h1 {
     color: #eeeeee;
@@ -236,9 +237,10 @@ html {
 header.global {
   border-bottom: 0px !important;
   box-shadow: none !important;
-  background: $main-color;
+  background: $main-color !important;
   .nav-global {
     float: right !important;
+    margin-right: 15px !important;
     li a {
       color: white !important;
     }
