@@ -234,6 +234,7 @@ html {
     color: #eeeeee;
     text-shadow: none !important;
     font-weight: bold;
+    font-family: 'Merriweather', serif !important;
   }
   .outer-wrapper {
     margin: 12em auto 0 auto !important;
@@ -435,6 +436,11 @@ section.container {
 }
 
 @media only screen and (max-width: 720px) {
+  body.view-in-course header.global {
+    .nav-global {
+      float: left !important;
+    }
+  }
   body.view-in-course header.global, body.view-in-course header.global.slim {
     width: 100% !important;
     h1.logo {
