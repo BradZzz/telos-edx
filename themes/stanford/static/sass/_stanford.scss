@@ -247,17 +247,19 @@ header.global {
   border-bottom: 0px !important;
   box-shadow: none !important;
   background: $main-color !important;
-  &.slim h2 {
-    color: #eeeeee !important;
-    text-shadow: none !important;
-    margin-top: 15px !important;
-    &.logo img {
-      height: 50px !important;
+  &.slim {
+    h1 {
+      &.logo img {
+        height: 50px !important;
+      }
     }
-  }
-  &.slim h1 {
-    &.logo img {
-      height: 50px !important;
+    h2 {
+      color: #eeeeee !important;
+      text-shadow: none !important;
+      margin-top: 15px !important;
+      &.logo img {
+        height: 50px !important;
+      }
     }
   }
   .nav-global {
@@ -390,5 +392,26 @@ section.container {
     &.active {
       color: $dark-color !important;
     }
+  }
+}
+
+//-----------------
+// Mobile Styles
+//-----------------
+@media only screen and (max-width: 720px) {
+  body.view-in-course header.global, body.view-in-course header.global.slim {
+    width: 100% !important;
+    h1.logo {
+      display: none;
+    }
+    h2.course-header {
+      width: 30% !important;
+    }
+    .user {
+      float: left !important;
+    }
+  }
+  .hMob {
+    display: none !important;
   }
 }
