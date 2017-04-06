@@ -418,6 +418,11 @@ section.container {
       padding-right: 2em;
     }
   }
+  .wrapper-footer footer {
+    .colophon, .references {
+      width: 50% !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 720px) {
