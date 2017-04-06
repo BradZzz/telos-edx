@@ -247,6 +247,14 @@ header.global {
   border-bottom: 0px !important;
   box-shadow: none !important;
   background: $main-color !important;
+  &.slim h2 {
+    color: #eeeeee !important;
+    text-shadow: none !important;
+    margin-top: 15px !important;
+    &.logo img {
+      height: 50px !important;
+    }
+  }
   .nav-global {
     float: right !important;
     margin-right: 15px !important;
@@ -300,7 +308,6 @@ body:not(.view-dashboard) header.global .dropdown {
 .wrapper-footer {
     box-shadow: none !important;
     background: #607D8A !important;
-    font-weight: 100;
     
     footer {
         max-width: 1180px;
@@ -316,7 +323,7 @@ body:not(.view-dashboard) header.global .dropdown {
                 display: inline-block;
                 height: 35px;
                 float: left;
-                margin: 0 20px 20px 0;
+                margin: 0 3em 20px 0;
             }
         }
 
