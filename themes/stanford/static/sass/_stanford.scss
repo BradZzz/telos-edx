@@ -410,6 +410,14 @@ section.container {
   .hMob {
     display: none !important;
   }
+  .hPad {
+    &.lefty {
+      padding-left: 2em;
+    }
+    &.righty {
+      padding-right: 2em;
+    }
+  }
 }
 
 @media only screen and (max-width: 720px) {
