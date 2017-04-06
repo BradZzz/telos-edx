@@ -219,6 +219,9 @@ html {
     min-height: 80vh !important;
   }
 }
+body.ltr section.course-info .main-cta {
+  margin-left: 2em;
+}
 
 //-----------------
 // Header Styling
@@ -436,7 +439,12 @@ section.container {
 }
 
 @media only screen and (max-width: 720px) {
-  body.view-in-course header.global {
+  body.view-dashboard header.global {
+    .logo {
+      display: none;
+    }
+  }
+  body.view-in-course header.global, body.view-login header.global {
     .nav-global {
       float: left !important;
     }
