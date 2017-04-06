@@ -215,6 +215,9 @@ html {
 }
 .content-wrapper {
   min-height: 90vh !important;
+  .course-profile {
+    min-height: 80vh !important;
+  }
 }
 
 //-----------------
@@ -297,6 +300,7 @@ body:not(.view-dashboard) header.global .dropdown {
 .wrapper-footer {
     box-shadow: none !important;
     background: #607D8A !important;
+    font-weight: 100;
     
     footer {
         max-width: 1180px;
@@ -319,7 +323,7 @@ body:not(.view-dashboard) header.global .dropdown {
         .references {
             width: 15%;
             float: right;
-            line-height: 1.5em;
+            line-height: 1.8em;
         }
 
         a {
