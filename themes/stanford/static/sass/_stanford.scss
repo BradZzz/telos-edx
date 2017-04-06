@@ -303,6 +303,10 @@ body.view-dashboard header.global .dropdown {
   padding-top: 5px !important;
 }
 
+body:not(.view-dashboard) header.global .dropdown {
+  padding-top: 5px !important;
+}
+
 //-----------------
 // Footer Styling
 //-----------------
