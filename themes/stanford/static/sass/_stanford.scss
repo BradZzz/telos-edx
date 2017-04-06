@@ -314,46 +314,46 @@ body:not(.view-dashboard) header.global .dropdown {
 // Footer Styling
 //-----------------
 .wrapper-footer {
-    box-shadow: none !important;
-    background: #607D8A !important;
-    
-    footer {
-        max-width: 1180px;
-        margin: 0 auto;
-        min-height: 45px;
+  box-shadow: none !important;
+  background: #607D8A !important;
 
-        .colophon {
-            width: 80%;
-            float: left;
-            padding-top: 1em;
+  footer {
+    max-width: 1180px;
+    margin: 0 auto;
+    min-height: 45px;
 
-            .nav-colophon li {
-                display: inline-block;
-                height: 35px;
-                float: left;
-                margin: 0 3em 20px 0;
-            }
-        }
+    .colophon {
+      width: 80%;
+      float: left;
+      padding-top: 1em;
 
-        .references {
-            width: 15%;
-            float: right;
-            line-height: 1.8em;
-        }
-
-        a {
-          color: #eeeeee !important;
-          text-decoration: none !important;
-          &:hover {
-            color: lighten(#eeeeee, 30%) !important;
-            cursor: pointer;
-          }
-        }
+      .nav-colophon li {
+        display: inline-block;
+        height: 35px;
+        float: left;
+        margin: 0 3em 20px 0;
+      }
     }
 
-    .copyright {
-        clear: both;
+    .references {
+      padding-top: 1em;
+      width: 15%;
+      float: right;
     }
+
+    a {
+      color: #eeeeee !important;
+      text-decoration: none !important;
+      &:hover {
+        color: lighten(#eeeeee, 30%) !important;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .copyright {
+    clear: both;
+  }
 }
 
 //-----------------
@@ -398,6 +398,20 @@ section.container {
 //-----------------
 // Mobile Styles
 //-----------------
+@media only screen and (max-width: 960px) {
+  body.view-dashboard header.global h1.logo {
+
+  }
+  body.view-in-course header.global, body.view-in-course header.global.slim {
+    h2.course-header {
+      width: 50% !important;
+    }
+  }
+  .hMob {
+    display: none !important;
+  }
+}
+
 @media only screen and (max-width: 720px) {
   body.view-in-course header.global, body.view-in-course header.global.slim {
     width: 100% !important;
@@ -410,8 +424,5 @@ section.container {
     .user {
       float: left !important;
     }
-  }
-  .hMob {
-    display: none !important;
   }
 }
