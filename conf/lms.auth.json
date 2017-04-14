@@ -68,11 +68,11 @@
         "user": "telosAdmin"
     }, 
     "EDX_API_KEY": "3d277fa1cfd614b28182",
-    "EMAIL_HOST": "", 
-    "EMAIL_PORT": 25, 
+    "EMAIL_HOST": "smtp.gmail.com",
+    "EMAIL_PORT": 587,
     "EMAIL_USE_TLS": true,
-    "EMAIL_HOST_USER": "",
-    "EMAIL_HOST_PASSWORD": "",
+    "EMAIL_HOST_USER": "support@telos.io",
+    "EMAIL_HOST_PASSWORD": "7telos$admin7",
     "GOOGLE_ANALYTICS_ACCOUNT": "UA-96659257-2",
     "GOOGLE_ANALYTICS_LINKEDIN": "", 
     "MODULESTORE": {
