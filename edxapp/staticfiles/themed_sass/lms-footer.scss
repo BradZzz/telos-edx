@@ -1,0 +1,62 @@
+/*
+ * This file is dynamically generated and ignored by Git.
+ * DO NOT MAKE CHANGES HERE. Instead, go edit its source:
+ * lms/static/sass/lms-footer.scss
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Footer for OpenEdX (left-to-right)
+// ==================================
+
+// libs and resets *do not edit*
+@import 'bourbon/bourbon'; // lib - bourbon
+@import 'vendor/bi-app/bi-app-ltr'; // set the layout for left to right languages
+
+// base - utilities
+@import 'base/variables';
+@import 'base/mixins';
+
+// This comment is used by preprocess_assets.py to include resources from a
+// theme, for old-style deprecated theming.
+@import 'stanford';
+
+footer#footer-openedx {
+    @import 'base/reset';
+    @import 'base/extends';
+    @import 'base/base';
+}
+
+// base - elements
+@import 'elements/typography';
+
+// shared - platform
+@import 'shared/footer';
