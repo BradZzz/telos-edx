@@ -1,9 +1,0 @@
-#!/bin/bash
-export BITNAMI_ROOT=/opt/bitnami
-export CONFIG_ROOT=/opt/bitnami/apps/edx/conf
-export MYSQL_UNIX_PORT=/opt/bitnami/mysql/tmp/mysql.sock
-export BOTO_CONFIG=''
-source /opt/bitnami/apps/edx/edx-platform/venv/bin/activate
-export PYTHONPATH="$PYTHONPATH:/opt/bitnami/apps/edx/edx-platform/cms/djangoapps:/opt/bitnami/apps/edx/edx-platform/common/djangoapps"
-python $@
-deactivate
