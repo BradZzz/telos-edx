@@ -124,6 +124,19 @@ site_status_msg = get_site_status_msg(course_id)
         </ol>
       % endif
     % else:
+    <ol class="right nav-courseware">
+      <%block name="navigation_sign_in">
+      <li class="nav-courseware-01">
+        % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+        % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+        <a class="cta cta-login" href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}">${_("Sign in")}</a>
+        % else:
+        <a class="cta cta-login" href="/login${login_query()}">${_("Sign in")}</a>
+        % endif
+        % endif
+      </li>
+    </%block>
+    </ol>
     <ol class="left nav-global">
       <%block name="navigation_global_links">
         % if static.get_value('ENABLE_MKTG_SITE', settings.FEATURES.get('ENABLE_MKTG_SITE', False)):
@@ -159,20 +172,6 @@ site_status_msg = get_site_status_msg(course_id)
             % endif
 
         % endif
-      </%block>
-    </ol>
-
-    <ol class="right nav-courseware">
-      <%block name="navigation_sign_in">
-        <li class="nav-courseware-01">
-          % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
-              % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
-              <a class="cta cta-login" href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}">${_("Sign in")}</a>
-              % else:
-              <a class="cta cta-login" href="/login${login_query()}">${_("Sign in")}</a>
-              % endif
-          % endif
-        </li>
       </%block>
     </ol>
     % endif
