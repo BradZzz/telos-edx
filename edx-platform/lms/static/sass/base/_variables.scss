@@ -476,11 +476,7 @@ $homepage-bg-image: url('#{$static-path}/images/telos-theme/telos_back.jpg') !de
 $login-banner-image: url('#{$static-path}/images/edx-theme/edx-background-banner-account.png') !default;
 $register-banner-image: url('#{$static-path}/images/edx-theme/edx-background-banner-account.png') !default;
 $passwordreset-banner-image: url('#{$static-path}/images/edx-theme/edx-background-banner-account.png') !default;
-<<<<<<< HEAD
 $video-thumb-url: url('#{$static-path}/images/telos-theme/edx.png') !default;
-=======
-$video-thumb-url: '#{$static-path}/images/telos-theme/edx.png' !default;
->>>>>>> messup
 
 // dashboard elements
 $dashboard-profile-header-image: linear-gradient(-90deg, rgb(255,255,255), rgb(245,245,245)) !default;
