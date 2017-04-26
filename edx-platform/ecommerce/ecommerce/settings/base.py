@@ -49,12 +49,12 @@ MANAGERS = ADMINS
 # in production, but the Django docs discourage its use in development.
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'telosMaster',
+        'USER': 'admin',
+        'PASSWORD': 't3los!?!auth**db',
+        'HOST': 'telos-master.cybsveonwzdx.us-east-1.rds.amazonaws.com',
+        'PORT': 3306,
         'ATOMIC_REQUESTS': True,
     }
 }
