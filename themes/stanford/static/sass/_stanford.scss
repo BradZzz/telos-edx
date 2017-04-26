@@ -209,33 +209,93 @@ $register-banner-image: none;
 // Override CSS
 //-----------------
 html {
-    background-color: $secondary-25 !important;
+  background-color: $secondary-25 !important;
+}
+.window-wrap > .content-wrapper {
+  outline-style: none;
+}
+.content-wrapper {
+  min-height: 90vh !important;
+  .course-profile {
+    min-height: 80vh !important;
+  }
+}
+body.ltr section.course-info .main-cta {
+  margin-left: 2em;
 }
 
 //-----------------
 // Header Styling
 //-----------------
 .home>header {
-    height: 500px;
-    background-position: 10em -15em;
-    background-size: 120% !important;
-    .outer-wrapper {
-        padding: 120px 0 !important;
-        .title {
-          margin-left: 10%;
-        }
-    }
+  .title {
+    margin: 0;
+    background-color: transparent !important;
+    text-align: center;
+    box-shadow: none !important;
+  }
+  .title>.heading-group h1 {
+    color: #eeeeee;
+    text-shadow: none !important;
+    font-weight: bold;
+    font-family: 'Merriweather', serif !important;
+  }
+  .outer-wrapper {
+    margin: 12em auto 0 auto !important;
+  }
+  height: 91vh;
+  background-position: 10em -15em;
+  background-size: cover !important;
 }
 
 header.global {
-  .user-link {
-    background-color: transparent !important;
-    box-shadow: none !important;
+  border-bottom: 0px !important;
+  box-shadow: none !important;
+  background: $main-color !important;
+  &.slim {
+    h1 {
+      &.logo img {
+        height: 50px !important;
+      }
+    }
+    h2 {
+      color: #eeeeee !important;
+      text-shadow: none !important;
+      margin-top: 15px !important;
+      &.logo img {
+        height: 50px !important;
+      }
+    }
+  }
+  .nav-global {
+    float: right !important;
+    margin-right: 15px !important;
+    li a {
+      color: white !important;
+    }
+  }
+  .cta-login {
+    background: #23B4E8 !important;
   }
   .user {
     height: 2.53em;
-    background: white;
+    background: tranparent;
     border-radius: 5px;
+    margin-right: 2em !important;
+    .user-link {
+      background-color: transparent !important;
+      box-shadow: none !important;
+      color: #eeeeee !important;
+      text-shadow: none !important;
+      .user-image-frame {
+        border-radius: 0% !important;
+        border: 1px solid #eeeeee;
+        margin-right: .5em;
+      }
+    }
+    .primary .fa-sort-desc {
+      color: #eeeeee;
+    }
     p:nth-child(2) {
       position: absolute;
       right: 0;
@@ -247,44 +307,58 @@ header.global {
 }
 
 body.view-dashboard header.global .dropdown {
-  padding-top: 5px !important;
+  margin-top: .4em !important;
 }
 
 body:not(.view-dashboard) header.global .dropdown {
-  padding-top: 10px !important;
+  margin-top: .8em !important;
+  padding-top: 0px;
 }
 
 //-----------------
 // Footer Styling
 //-----------------
 .wrapper-footer {
-    box-shadow: none !important;
-    
-    footer {
-        max-width: 1180px;
-        margin: 0 auto;
+  box-shadow: none !important;
+  background: #607D8A !important;
 
-        .colophon {
-            width: 80%;
-            float: left;
+  footer {
+    max-width: 1180px;
+    margin: 0 auto;
+    min-height: 45px;
 
-            .nav-colophon li {
-                display: inline-block;
-                height: 35px;
-                float: left;
-                margin: 0 20px 20px 0;
-            }
-        }
+    .colophon {
+      width: 80%;
+      float: left;
+      padding-top: 1em;
 
-        .references {
-            width: 15%;
-            float: right;
-        }
+      .nav-colophon li {
+        display: inline-block;
+        height: 35px;
+        float: left;
+        margin: 0 3em 20px 0;
+      }
     }
 
-    .copyright {
-        clear: both;
+    .references {
+      padding-top: 1em;
+      width: 15%;
+      float: right;
     }
+
+    a {
+      color: #eeeeee !important;
+      text-decoration: none !important;
+      &:hover {
+        color: lighten(#eeeeee, 30%) !important;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .copyright {
+    clear: both;
+  }
 }
 
 //-----------------
@@ -297,4 +371,95 @@ section.tos {
     .print {
         margin: 50px 0;
     }
+}
+section.container {
+  nav::after {
+    background-image: none !important;
+  }
+  .about-menu, .content-menu {
+    padding: 1.5em;
+    float: left;
+    h3 {
+      padding: 15px 0 10px 0;
+      font-size: 1.1em;
+      font-weight: 100;
+      color: #585858;
+    }
+    .container.about .message {
+      border-bottom: none;
+    }
+  }
+  .about-menu {
+    width: 25% !important;
+  }
+  .content-menu {
+    width: 65% !important;
+  }
+  .about-menu a, .content-menu a {
+    width: 100%;
+    text-align: start;
+    border-bottom: none !important;
+    color: #BDBDBD !important;
+    &.active {
+      color: $dark-color !important;
+    }
+  }
+}
+
+//-----------------
+// Mobile Styles
+//-----------------
+@media only screen and (max-width: 960px) {
+  body.ltr section.about {
+    min-width: 100% !important;
+    .about-menu, .content-menu {
+      width: 90% !important;
+    }
+  }
+  body.view-in-course header.global, body.view-in-course header.global.slim {
+    h2.course-header {
+      width: 50% !important;
+    }
+  }
+  .hMob {
+    display: none !important;
+  }
+  .hPad {
+    &.lefty {
+      padding-left: 2em;
+    }
+    &.righty {
+      padding-right: 2em;
+    }
+  }
+  .wrapper-footer footer {
+    .colophon, .references {
+      width: 40% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  body.view-dashboard header.global {
+    .logo {
+      display: none;
+    }
+  }
+  body.view-in-course header.global, body.view-login header.global {
+    .nav-global {
+      float: left !important;
+    }
+  }
+  body.view-in-course header.global, body.view-in-course header.global.slim {
+    width: 100% !important;
+    h1.logo {
+      display: none;
+    }
+    h2.course-header {
+      width: 30% !important;
+    }
+    .user {
+      float: left !important;
+    }
+  }
 }
