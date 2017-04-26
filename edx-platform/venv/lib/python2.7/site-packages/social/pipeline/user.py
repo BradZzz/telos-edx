@@ -39,7 +39,9 @@ def get_username(strategy, details, user=None, *args, **kwargs):
         else:
             username = uuid4().hex
 
-        short_username = username[:max_length - uuid_length]
+        short_username = (username[:max_length - uuid_length]
+                          if max_length is not None
+                          else username)
         final_username = slug_func(clean_func(username[:max_length]))
 
         # Generate a unique username for current user using username
@@ -59,9 +61,8 @@ def create_user(strategy, details, user=None, *args, **kwargs):
     if user:
         return {'is_new': False}
 
-    fields = dict((name, kwargs.get(name) or details.get(name))
-                  for name in strategy.setting('USER_FIELDS',
-                                               USER_FIELDS))
+    fields = dict((name, kwargs.get(name, details.get(name)))
+                  for name in strategy.setting('USER_FIELDS', USER_FIELDS))
     if not fields:
         return
 

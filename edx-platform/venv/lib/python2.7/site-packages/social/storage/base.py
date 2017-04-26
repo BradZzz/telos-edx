@@ -52,14 +52,7 @@ class UserMixin(object):
         if token and backend and hasattr(backend, 'refresh_token'):
             backend = backend(strategy=strategy)
             response = backend.refresh_token(token, *args, **kwargs)
-            access_token = response.get('access_token')
-            refresh_token = response.get('refresh_token')
-
-            if access_token or refresh_token:
-                if access_token:
-                    self.extra_data['access_token'] = access_token
-                if refresh_token:
-                    self.extra_data['refresh_token'] = refresh_token
+            if self.set_extra_data(response):
                 self.save()
 
     def expiration_datetime(self):
@@ -88,7 +81,8 @@ class UserMixin(object):
 
     def set_extra_data(self, extra_data=None):
         if extra_data and self.extra_data != extra_data:
-            if self.extra_data:
+            if self.extra_data and not isinstance(
+                    self.extra_data, six.string_types):
                 self.extra_data.update(extra_data)
             else:
                 self.extra_data = extra_data

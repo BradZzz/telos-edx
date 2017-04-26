@@ -19,7 +19,7 @@ from social.p3 import urlparse, urlunparse, urlencode, \
 
 SETTING_PREFIX = 'SOCIAL_AUTH'
 
-social_logger = logging.Logger('social')
+social_logger = logging.getLogger('social')
 
 
 class SSLHttpAdapter(HTTPAdapter):
@@ -81,21 +81,21 @@ def setting_name(*names):
     return to_setting_name(*((SETTING_PREFIX,) + names))
 
 
-def sanitize_redirect(host, redirect_to):
+def sanitize_redirect(hosts, redirect_to):
     """
-    Given the hostname and an untrusted URL to redirect to,
+    Given a list of hostnames and an untrusted URL to redirect to,
     this method tests it to make sure it isn't garbage/harmful
     and returns it, else returns None, similar as how's it done
     on django.contrib.auth.views.
     """
     if redirect_to:
         try:
-            # Don't redirect to a different host
-            netloc = urlparse(redirect_to)[1] or host
+            # Don't redirect to a host that's not in the list
+            netloc = urlparse(redirect_to)[1] or hosts[0]
         except (TypeError, AttributeError):
             pass
         else:
-            if netloc == host:
+            if netloc in hosts:
                 return redirect_to
 
 
@@ -166,7 +166,24 @@ def partial_pipeline_data(backend, user=None, *args, **kwargs):
     if partial:
         idx, backend_name, xargs, xkwargs = \
             backend.strategy.partial_from_session(partial)
+
+        partial_matches_request = False
+
         if backend_name == backend.name:
+            partial_matches_request = True
+
+            req_data = backend.strategy.request_data()
+            # Normally when resuming a pipeline, request_data will be empty. We
+            # only need to check for a uid match if new data was provided (i.e.
+            # if current request specifies the ID_KEY).
+            if backend.ID_KEY in req_data:
+                id_from_partial = xkwargs.get('uid')
+                id_from_request = req_data.get(backend.ID_KEY)
+
+                if id_from_partial != id_from_request:
+                    partial_matches_request = False
+
+        if partial_matches_request:
             kwargs.setdefault('pipeline_index', idx)
             if user:  # don't update user if it's None
                 kwargs.setdefault('user', user)
@@ -229,7 +246,7 @@ def handle_http_errors(func):
             return func(*args, **kwargs)
         except requests.HTTPError as err:
             if err.response.status_code == 400:
-                raise AuthCanceled(args[0])
+                raise AuthCanceled(args[0], response=err.response)
             elif err.response.status_code == 503:
                 raise AuthUnreachableProvider(args[0])
             else:

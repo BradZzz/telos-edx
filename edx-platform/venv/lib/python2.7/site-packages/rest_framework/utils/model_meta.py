@@ -6,13 +6,16 @@ relationships and their associated metadata.
 Usage: `get_field_info(model)` returns a `FieldInfo` instance.
 """
 import inspect
-from collections import namedtuple
+from collections import OrderedDict, namedtuple
 
+from django.apps import apps
 from django.core.exceptions import ImproperlyConfigured
 from django.db import models
 from django.utils import six
 
-from rest_framework.compat import OrderedDict
+from rest_framework.compat import (
+    get_all_related_many_to_many_objects, get_all_related_objects
+)
 
 FieldInfo = namedtuple('FieldResult', [
     'pk',  # Model field instance
@@ -27,6 +30,7 @@ RelationInfo = namedtuple('RelationInfo', [
     'model_field',
     'related_model',
     'to_many',
+    'to_field',
     'has_through_model'
 ])
 
@@ -45,7 +49,7 @@ def _resolve_model(obj):
     """
     if isinstance(obj, six.string_types) and len(obj.split('.')) == 2:
         app_name, model_name = obj.split('.')
-        resolved_model = models.get_model(app_name, model_name)
+        resolved_model = apps.get_model(app_name, model_name)
         if resolved_model is None:
             msg = "Django did not return a model for {0}.{1}"
             raise ImproperlyConfigured(msg.format(app_name, model_name))
@@ -91,6 +95,10 @@ def _get_fields(opts):
     return fields
 
 
+def _get_to_field(field):
+    return getattr(field, 'to_fields', None) and field.to_fields[0]
+
+
 def _get_forward_relationships(opts):
     """
     Returns an `OrderedDict` of field names to `RelationInfo`.
@@ -101,6 +109,7 @@ def _get_forward_relationships(opts):
             model_field=field,
             related_model=_resolve_model(field.rel.to),
             to_many=False,
+            to_field=_get_to_field(field),
             has_through_model=False
         )
 
@@ -110,6 +119,8 @@ def _get_forward_relationships(opts):
             model_field=field,
             related_model=_resolve_model(field.rel.to),
             to_many=True,
+            # manytomany do not have to_fields
+            to_field=None,
             has_through_model=(
                 not field.rel.through._meta.auto_created
             )
@@ -127,24 +138,27 @@ def _get_reverse_relationships(opts):
     # See: https://code.djangoproject.com/ticket/24208
 
     reverse_relations = OrderedDict()
-    for relation in opts.get_all_related_objects():
+    for relation in get_all_related_objects(opts):
         accessor_name = relation.get_accessor_name()
         related = getattr(relation, 'related_model', relation.model)
         reverse_relations[accessor_name] = RelationInfo(
             model_field=None,
             related_model=related,
             to_many=relation.field.rel.multiple,
+            to_field=_get_to_field(relation.field),
             has_through_model=False
         )
 
     # Deal with reverse many-to-many relationships.
-    for relation in opts.get_all_related_many_to_many_objects():
+    for relation in get_all_related_many_to_many_objects(opts):
         accessor_name = relation.get_accessor_name()
         related = getattr(relation, 'related_model', relation.model)
         reverse_relations[accessor_name] = RelationInfo(
             model_field=None,
             related_model=related,
             to_many=True,
+            # manytomany do not have to_fields
+            to_field=None,
             has_through_model=(
                 (getattr(relation.field.rel, 'through', None) is not None) and
                 not relation.field.rel.through._meta.auto_created
