@@ -2,6 +2,7 @@ import logging
 import datetime
 import decimal
 import pytz
+import stripe
 from ipware.ip import get_ip
 from django.db.models import Q
 from django.conf import settings
@@ -1012,21 +1013,43 @@ def place_order(request):
     """
     Receives order info and sends credit card info to Stripe.
     """
-    stripe_result = True
-    #context = {
-    #    'full_name': request.POST.get('full_name', 'no full name'),
-    #    'credit_card_number': request.POST.get('cc_number', 'no cc num'),
-    #    'expiration_month': request.POST.get('cc_exp_month', 'no cc month'),
-    #    'expiration_year': request.POST.get('cc_exp_year', 'no xx year'),
-    #    'stripe_result': stripe_result
-    #}
+    amount = request.POST.get('amount', 1337)
+    full_name = request.POST.get('full_name', 'no full name')
+    credit_card_number = request.POST.get('cc_number', 'no cc num')
+    expiration_month = request.POST.get('cc_exp_month', 'no cc month')
+    expiration_year = request.POST.get('cc_exp_year', 'no xx year')
+
+    stripe.api_key = "sk_test_ekNSQSTd7vupVVtApVg4ih4I"
+    stripe_result = stripe.Charge.create(
+      amount=50,
+      currency="usd",
+      source={
+          'exp_month': expiration_month,
+          'exp_year': expiration_year,
+          'number': credit_card_number, # 16-digit string. no dashes.
+          'object': 'card'
+      },
+      metadata={
+          'test charge': 'friday 5:27',
+          'amount': amount,
+          'currency':'usd',
+          'orderPage_transactionType':'sale',
+          'orderNumber':2,
+          'orderPage_timestamp':1494031150427,
+          'orderPage_version':7,
+          'orderPage_signaturePublic':'yjZNkCNnMjU8alkRA8zErWoFRD4=',
+          'orderPage_signedFields':'amount,currency,orderPage_transactionType,orderNumber,merchantID,orderPage_timestamp,orderPage_version,orderPage_serialNumber'
+      }
+    )
+
     context = {
-        'full_name': request.POST.get('full_name', 'no full name'),
-        'credit_card_number': request.POST.get('cc_number', 'no cc num'),
-        'expiration_month': request.POST.get('cc_exp_month', 'no cc month'),
-        'expiration_year': request.POST.get('cc_exp_year', 'no xx year'),
-        'result': stripe_result
+        'full_name': full_name,
+        'credit_card_number': credit_card_number,
+        'expiration_month': expiration_month,
+        'expiration_year': expiration_year,
+        'result': True # TODO: gather real Stripe info
     }
+
     return render_to_response('shoppingcart/confirm_order.html', context)
 
 def confirm_order(request):
