@@ -1007,3 +1007,37 @@ def csv_report(request):
 
     else:
         return HttpResponseBadRequest("HTTP Method Not Supported")
+
+def place_order(request):
+    """
+    Receives order info and sends credit card info to Stripe.
+    """
+    stripe_result = True
+    #context = {
+    #    'full_name': request.POST.get('full_name', 'no full name'),
+    #    'credit_card_number': request.POST.get('cc_number', 'no cc num'),
+    #    'expiration_month': request.POST.get('cc_exp_month', 'no cc month'),
+    #    'expiration_year': request.POST.get('cc_exp_year', 'no xx year'),
+    #    'stripe_result': stripe_result
+    #}
+    context = {
+        'full_name': request.POST.get('full_name', 'no full name'),
+        'credit_card_number': request.POST.get('cc_number', 'no cc num'),
+        'expiration_month': request.POST.get('cc_exp_month', 'no cc month'),
+        'expiration_year': request.POST.get('cc_exp_year', 'no xx year'),
+        'result': stripe_result
+    }
+    return render_to_response('shoppingcart/confirm_order.html', context)
+
+def confirm_order(request):
+    """
+    Displays order confirmation after sending credit card info to Stripe.
+    """
+    context = {
+        'full_name': 'Bruce Wayne',
+        'credit_card_number': '4242-4242-4242-4242',
+        'expiration_month': '12' ,
+        'expiration_year': '31',
+        'result': True,
+    }
+    return render_to_response('shoppingcart/confirm_order.html', context)

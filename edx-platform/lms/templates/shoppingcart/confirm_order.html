@@ -1,0 +1,31 @@
+<%inherit file="../main.html" />
+<%namespace name='static' file='/static_content.html'/>
+<%!
+from django.utils.translation import ugettext as _
+from django.conf import settings
+%>
+<div class="container">
+  <header class="wrapper">
+  <h1> ${_("{platform_name} -  Shopping Cart").format(platform_name=static.get_platform_name())}</h1>
+  </header>
+</div>
+<div class="container">
+    <p>21 order complete</p>
+    <ul>
+        <li>full_name: ${full_name}</li>
+        <li>credit_card_number: ${credit_card_number}</li>
+        <li>expiration_month: ${expiration_month}</li>
+        <li>expiration_year: ${expiration_year}</li>
+        <li>stripe_result: ${result}</li>
+    </ul>
+</div>
+<div class="container">
+	<form action="/shoppingcart/place_order/" method="POST">
+		<input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token}"/>
+		Full Name: <input name="full_name" />
+		CC Number: <input name="cc_number" />
+		EXP Month: <input name="cc_exp_month" />
+		EXP Year: <input name="cc_exp_year" />
+		<input type="submit" />
+	</form>
+</div>
