@@ -5,5 +5,66 @@
             <input type="hidden" name="${pk}" value="${pv}" />
         % endfor
 
-        <button type="submit">${_('Payment')}<i class="icon fa fa-caret-right" aria-hidden="true"></i></button>
+        <button type="submit">${_('Confirm Payment')}<i class="icon fa fa-caret-right" aria-hidden="true" style="position: relative; right: -20px; top: 0;"></i></button>
+
+<style>
+#payment-details-input {
+  margin: 0 1em;
+}
+
+#payment-details-input div {
+  padding: 5px;
+}
+
+#cc-exp-month {
+  width: 3em;
+}
+
+#cc-exp-year {
+  width: 4em;
+}
+</style>
+
+	<div id="payment-details-input" style="float: right;">
+		<div>
+		Name on card: <input name="full_name" />
+		</div>
+		<div>
+		  Card number: <input name="cc_number" />
+		</div>
+		<div>
+		  Expiration month:
+		  	<select id="cc-exp-month" name="cc_exp_month">
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+		  	</select>
+		  year:
+		  	<select id="cc-exp-year" name="cc_exp_year">
+		  	<option value="2017">2017</option>
+		  	<option value="2018">2018</option>
+		  	<option value="2019">2019</option>
+		  	<option value="2020">2020</option>
+		  	<option value="2021">2021</option>
+		  	<option value="2022">2022</option>
+		  	<option value="2023">2023</option>
+		  	<option value="2024">2024</option>
+		  	<option value="2025">2025</option>
+		  	<option value="2026">2026</option>
+		  	<option value="2027">2027</option>
+		  	<option value="2028">2028</option>
+		  	<option value="2029">2029</option>
+		  	<option value="2030">2030</option>
+		  	</select>
+		</div>
+	</div>
     </form>
