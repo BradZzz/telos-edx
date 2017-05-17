@@ -1,3 +1,17 @@
 edxapp/log
 edxapp/staticfiles
 log/
+
+edx-forum/vendor/gems/delayed_job_mongoid
+edx-platform/MongoDBProxy
+edx-platform/django-staticfiles
+edx-platform/pyfs
+edx-platform/venv/src/pystache-custom
+edx-platform/venv/src/rate-xblock
+edx-platform/xblock-filestorage
+edxapp-demo
+edxapp/log/edx.cms.core.default.log
+edxapp/log/edx.log
+
+edx-platform/_sqlite3.so
+edx-platform/venv/pip-selfcheck.json
