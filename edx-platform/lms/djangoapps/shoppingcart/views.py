@@ -1042,7 +1042,12 @@ def place_order(request):
       }
     )
 
+    cart = Order.get_cart_for_user(request.user)
+    cart.start_purchase()
+    cart.purchase(first=full_name, last=full_name, ccnum=credit_card_nuber)
+    
     context = {
+	'order_id': cart.id,
         'full_name': full_name,
         'credit_card_number': credit_card_number,
         'expiration_month': expiration_month,
@@ -1056,7 +1061,9 @@ def confirm_order(request):
     """
     Displays order confirmation after sending credit card info to Stripe.
     """
+    cart = Order.get_cart_for_user(request.user)
     context = {
+	'order_id': cart.id,
         'full_name': 'Bruce Wayne',
         'credit_card_number': '4242-4242-4242-4242',
         'expiration_month': '12' ,
