@@ -1,5 +1,5 @@
 <%! from django.utils.translation import ugettext as _ %>
-    <form action="${action}" method="post">
+    <form action="/shoppingcart/place_order/" method="post">
 	<input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token}"/>
         % for pk, pv in params.iteritems():
             <input type="hidden" name="${pk}" value="${pv}" />
