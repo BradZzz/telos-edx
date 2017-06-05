@@ -158,7 +158,7 @@ from openedx.core.lib.courses import course_image_url
             </div>
         </div>
         <div class="col-two">
-            <div class="col-2 relative">
+            <div class="">
                % if order_type == 'business':
                   <div name="billing">
                       <button type="submit" name="billing-details" aria-describedby="billing_business_helper_text">
@@ -170,6 +170,13 @@ from openedx.core.lib.courses import course_image_url
                       </p>
                   </div>
                    <div name="payment" class="hidden">
+
+<style>
+#payment_helper_text {
+  padding: 0;
+}
+</style>
+
                     <div id="processor_form" aria-describedby="payment_business_helper_text">
                       ${form_html}
                     </div>
